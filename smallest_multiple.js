@@ -7,7 +7,14 @@
  *                            between 1 and `ceiling`
  */
 module.exports = function( ceiling ) {
-  // do work here
+
+for ( var n = ceiling; ; n += ceiling )
+
+for ( var i = 2; i <= ceiling; i++ )
+
+if ( n % i > 0 ) break;
+
+else if ( i == ceiling ) return n;
 
 
   return 0;
